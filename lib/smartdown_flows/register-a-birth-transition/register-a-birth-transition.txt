@@ -1,6 +1,8 @@
+---
 meta_description: Parents must register the birth in the country where the child was born - find out if you can also register the birth in the UK
 status: transition
 satisfies_need: 101003
+---
 
 # Register a birth abroad
 
