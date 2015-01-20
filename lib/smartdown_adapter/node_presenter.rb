@@ -9,31 +9,31 @@ module SmartdownAdapter
     end
 
     def body
-      @smartdown_node.body && markdown_to_html(@smartdown_node.body)
+      @smartdown_node.body && markdown_to_html(@smartdown_node.body.strip)
     end
 
     def post_body
-      @smartdown_node.post_body && markdown_to_html(@smartdown_node.post_body)
+      @smartdown_node.post_body && markdown_to_html(@smartdown_node.post_body.strip)
     end
 
     def next_steps
-      @smartdown_node.next_steps && markdown_to_html(@smartdown_node.next_steps)
+      @smartdown_node.next_steps && markdown_to_html(@smartdown_node.next_steps.strip)
     end
 
     def has_body?
-      !!body
+      body.present?
     end
 
     def has_post_body?
-      !!post_body
+      post_body.present?
     end
 
     def has_title?
-      !!title
+      title.present?
     end
 
     def has_next_steps?
-      !!next_steps
+      next_steps.present?
     end
 
   private

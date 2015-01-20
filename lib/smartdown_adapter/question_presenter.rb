@@ -10,23 +10,23 @@ module SmartdownAdapter
     end
 
     def body
-      @smartdown_question.body && markdown_to_html(smartdown_question.body)
+      @smartdown_question.body && markdown_to_html(smartdown_question.body.strip)
     end
 
     def post_body
-      @smartdown_question.post_body && markdown_to_html(smartdown_question.post_body)
+      @smartdown_question.post_body && markdown_to_html(smartdown_question.post_body.strip)
     end
 
     def has_body?
-      !!body
+      body.present?
     end
 
     def has_hint?
-      !!hint
+      hint.present?
     end
 
     def has_post_body?
-      !!post_body
+      post_body.present?
     end
 
     def error
