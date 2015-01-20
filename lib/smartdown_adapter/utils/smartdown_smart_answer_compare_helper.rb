@@ -49,7 +49,7 @@ module SmartdownAdapter
         # has no artefact for content to be inserted for)
         # It would be preferable to stub out the artefact fetching call somehow..
         doc = Nokogiri::HTML(@session.response.body)
-        doc.css(".related-positioning").remove
+        doc.css(".related-container").remove
         doc.css("#global-breadcrumb").remove
         doc.css("#ga-params").remove
         response = doc.to_s
