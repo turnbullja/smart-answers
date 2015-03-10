@@ -4,5 +4,5 @@
 
 [date: due_date]
 
-* two_carers is 'no' => adoption_employment_status_mother
-* two_carers is 'yes' => adoption_employment_status_mother_and_partner
+* two_carers is 'no' => adoption_employment_status_adopter_a
+* two_carers is 'yes' => adoption_employment_status_adopter_a_and_adopter_b
