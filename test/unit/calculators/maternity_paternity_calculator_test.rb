@@ -169,7 +169,7 @@ module SmartAnswer::Calculators
       end
 
       context "specific date tests (for lower_earning_limits) for birth" do
-        should "return lower_earning_limit 107" do
+        should "return lower_earning_limit 107 based on due date 1 January 2013" do
           @due_date = Date.parse("1 January 2013")
           @calculator = MaternityPaternityCalculator.new(@due_date)
           assert_equal @calculator.lower_earning_limit, 107
@@ -193,25 +193,25 @@ module SmartAnswer::Calculators
           assert_equal @calculator.lower_earning_limit, 109
         end
 
-        should "return lower_earning_limit 107" do
+        should "return lower_earning_limit 107 based on due date 15 July 2013" do
           @due_date = Date.parse("15 July 2013")
           @calculator = MaternityPaternityCalculator.new(@due_date)
           assert_equal @calculator.lower_earning_limit, 107
         end
 
-        should "return lower_earning_limit 102" do
+        should "return lower_earning_limit 102 base on due date 15 July 2012" do
           @due_date = Date.parse("15 July 2012")
           @calculator = MaternityPaternityCalculator.new(@due_date)
           assert_equal @calculator.lower_earning_limit, 102
         end
 
-        should "return lower_earning_limit 102" do
+        should "return lower_earning_limit 102 base on due date 14 July 2012" do
           @due_date = Date.parse("14 July 2012")
           @calculator = MaternityPaternityCalculator.new(@due_date)
           assert_equal @calculator.lower_earning_limit, 102
         end
 
-        should "return lower_earning_limit 102" do
+        should "return lower_earning_limit 102 base on due date 1 January 2012" do
           @due_date = Date.parse("1 January 2012")
           @calculator = MaternityPaternityCalculator.new(@due_date)
           assert_equal @calculator.lower_earning_limit, 102
@@ -231,13 +231,13 @@ module SmartAnswer::Calculators
       end
 
       context "specific date tests (for lower_earning_limits) for adoption" do
-        should "return lower_earning_limit 107" do
+        should "return lower_earning_limit 107 based on match date 1 September 2012" do
           @match_date = Date.parse("1 September 2012")
           @calculator = MaternityPaternityCalculator.new(@match_date, "adoption")
           assert_equal @calculator.lower_earning_limit, 107
         end
 
-        should "return lower_earning_limit 102" do
+        should "return lower_earning_limit 102 based on match date 31 March 2012" do
           @match_date = Date.parse("31 March 2012")
           @calculator = MaternityPaternityCalculator.new(@match_date, "adoption")
           assert_equal @calculator.lower_earning_limit, 102
