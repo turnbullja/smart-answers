@@ -1,0 +1,11 @@
+$IF earnings_employment(earnings_employment_1 work_employment_1)
+
+{{snippet: mat-allowance}}
+
+$ELSE
+
+{{snippet: single-birth-nothing}}
+
+$ENDIF
+
+{{snippet: extra-help}}

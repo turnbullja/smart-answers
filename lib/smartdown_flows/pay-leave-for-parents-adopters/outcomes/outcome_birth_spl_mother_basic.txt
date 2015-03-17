@@ -1,0 +1,23 @@
+$IF employment_status_1 in {employee worker} AND continuity(job_before_x_1 job_after_y_1) AND lower_earnings(lel_1)
+
+{{snippet: mat-pay}}
+
+{{snippet: mat-shared-pay}}
+
+$ENDIF
+
+$IF employment_status_1 is 'employee' AND continuity(job_before_x_1 job_after_y_1)
+
+{{snippet: mat-leave}}
+
+{{snippet: mat-shared-leave}}
+
+$ENDIF
+
+$IF NOT continuity(job_before_x_1 job_after_y_1) AND NOT lower_earnings(lel_1)
+
+{{snippet: single-birth-nothing}}
+
+$ENDIF
+
+{{snippet: extra-help}}
