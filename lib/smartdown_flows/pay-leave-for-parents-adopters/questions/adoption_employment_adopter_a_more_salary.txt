@@ -4,16 +4,15 @@
 
 [salary: salary_1_66_weeks]
 
+
 * two_carers is 'no'
-  * employment_status_1 is 'employee'
-    * job_after_y_1 is 'yes' => outcome_mat-allowance_mat-leave
-    * job_after_y_1 is 'no' => outcome_mat-allowance
-  * employment_status_1 in {worker self-employed unemployed} => outcome_mat-allowance
+  * employment_status_1 is 'employee' => outcome_birth_adopter_a_leave_allowance
+  * otherwise => outcome_birth_adopter_a_allowance
 * two_carers is 'yes'
-  * employment_status_2 in {employee worker} => adoption_employment_adopter_b
+  * employment_status_2 in {employee worker} => birth_employment_adopter_b
   * employment_status_2 in {self-employed unemployed}
     * employment_status_1 is 'employee'
-      * continuity(job_before_x_1 job_after_y_1) AND due_date >= '2015-4-5' => adoption_employment_adopter_b_more
-      * job_after_y_1 is 'yes' => outcome_mat-allowance_mat-leave
-      * job_after_y_1 is 'no' => outcome_mat-allowance
-    * employment_status_1 in {worker self-employed unemployed} => outcome_mat-allowance
+      * continuity(job_before_x_1 job_after_y_1) AND due_date >= '2015-4-5' => birth_employment_adopter_b_more
+      * job_after_y_1 is 'yes' => outcome_birth_adopter_a_leave_allowance
+      * job_after_y_1 is 'no' => outcome_birth_adopter_a_allowance
+    * employment_status_1 in {worker self-employed unemployed} => outcome_birth_adopter_a_allowance

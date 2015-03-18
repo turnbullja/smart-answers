@@ -6,17 +6,10 @@
 * yes: Yes
 * no: No
 
-# Will you be adopting the child?
-
-[choice: adopting]
-* yes: Yes
-* no: No
-
 The partner must be one of the following:
 
 - your husband, wife, civil partner or joint adopter
 - the child’s other parent
 - your partner (if they live with you and the child)
 
-* adopting is 'yes' => adoption_due_date
-* adopting is 'no' => birth_due_date
+* otherwise => birth_due_date

@@ -16,5 +16,9 @@ The 26 weeks don’t need to be in a row. They can be full or part weeks.
 
 The 13 weeks don’t need to be in a row.
 
-* due_date >= '2015-4-5' => outcome-birth-mother-partner-post-april-5-2015
-* due_date < '2015-4-5' => outcome-birth-mother-partner-pre-april-5-2015
+* employment_status_2 in {self-employed unemployed}
+  * employment_status_1 in {employee worker} => outcome_birth_spl_mother_basic
+  * employment_status_1 in {self-employed unemployed} => outcome_birth_spl_mother_allowance
+* employment_status_1 in {self-employed unemployed} => outcome_birth_spl_mother_partner_allowance
+* NOT continuity(job_before_x_1 job_after_y_1) OR NOT lower_earnings(lel_1) => outcome_birth_spl_mother_partner_leave_allowance
+* otherwise => outcome_birth_spl_mother_partner_basic

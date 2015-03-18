@@ -1,5 +1,3 @@
-$IF
-
 $IF employment_status_1 in {employee worker} AND continuity(job_before_x_1 job_after_y_1) AND lower_earnings(lel_1)
 
 {{snippet: mat-pay}}

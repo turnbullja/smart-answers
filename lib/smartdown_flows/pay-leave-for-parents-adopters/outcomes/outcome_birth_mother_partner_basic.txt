@@ -1,0 +1,61 @@
+$IF employment_status_1 in {employee worker} AND continuity(job_before_x_1 job_after_y_1) AND lower_earnings(lel_1)
+
+{{snippet: mat-pay}}
+
+$ENDIF
+
+$IF employment_status_1 is 'employee' AND job_after_y_1 is 'yes'
+
+{{snippet: mat-leave}}
+
+$ENDIF
+
+$IF employment_status_1 in {employee worker} AND continuity(job_before_x_1 job_after_y_1) AND lower_earnings(lel_1)
+
+$IF employment_status_2 in {employee worker} AND continuity(job_before_x_2 job_after_y_2) AND lower_earnings(lel_2)
+
+{{snippet: additional-pat-pay}}
+
+$ENDIF
+
+$IF employment_status_2 is 'employee' AND continuity(job_before_x_2 job_after_y_2)
+
+{{snippet: additional-pat-leave}}
+
+$ENDIF
+
+$ELSEIF employment_status_1 is 'employee' AND job_after_y_1 is 'yes'
+
+$IF employment_status_2 in {employee worker} AND continuity(job_before_x_2 job_after_y_2) AND lower_earnings(lel_2)
+
+{{snippet: additional-pat-pay}}
+
+$ENDIF
+
+$IF employment_status_2 is 'employee' AND continuity(job_before_x_2 job_after_y_2)
+
+{{snippet: additional-pat-leave}}
+
+$ENDIF
+
+$ENDIF
+
+$IF employment_status_2 in {employee worker} AND continuity(job_before_x_2 job_after_y_2) AND lower_earnings(lel_2)
+
+{{snippet: pat-pay}}
+
+$ENDIF
+
+$IF employment_status_2 is 'employee' AND continuity(job_before_x_2 job_after_y_2)
+
+{{snippet: pat-leave}}
+
+$ENDIF
+
+$IF NOT continuity(job_before_x_1 job_after_y_1) AND NOT continuity(job_before_x_2 job_after_y_2)
+
+{{snippet: birth-nothing}}
+
+$ENDIF
+
+{{snippet: extra-help}}

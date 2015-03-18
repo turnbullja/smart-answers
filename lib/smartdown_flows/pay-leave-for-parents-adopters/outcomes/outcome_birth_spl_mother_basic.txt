@@ -2,7 +2,11 @@ $IF employment_status_1 in {employee worker} AND continuity(job_before_x_1 job_a
 
 {{snippet: mat-pay}}
 
+$IF earnings_employment(earnings_employment_2 work_employment_2)
+
 {{snippet: mat-shared-pay}}
+
+$ENDIF
 
 $ENDIF
 
@@ -10,11 +14,16 @@ $IF employment_status_1 is 'employee' AND continuity(job_before_x_1 job_after_y_
 
 {{snippet: mat-leave}}
 
+$IF earnings_employment(earnings_employment_2 work_employment_2)
+
 {{snippet: mat-shared-leave}}
 
 $ENDIF
 
+$ENDIF
+
 $IF NOT continuity(job_before_x_1 job_after_y_1) AND NOT lower_earnings(lel_1)
+
 
 {{snippet: single-birth-nothing}}
 

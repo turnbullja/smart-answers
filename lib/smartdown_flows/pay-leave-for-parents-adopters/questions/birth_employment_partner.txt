@@ -24,4 +24,17 @@ This is their total take-home pay before any deductions, eg tax.
 * yes: Yes
 * no: No
 
-* otherwise => birth_employment_partner_more
+* employment_status_1 in {unemployed self-employed}
+  * due_date >= '2015-4-5'
+    * employment_status_2 in {employee worker} => outcome_birth_spl_mother_partner_allowance
+    * employment_status_2 in {unemployed self-employed} => outcome_birth_spl_mother_allowance
+  * due_date < '2015-4-5'
+    * employment_status_2 in {employee worker} => outcome_birth_mother_partner_allowance
+    * employment_status_2 in {unemployed self-employed} => outcome_birth_mother_allowance
+* employment_status_2 is 'employee' AND employment_status_1 in {employee worker} AND continuity(job_before_x_1 job_after_y_1) AND lower_earnings(lel_1) AND due_date >= '2015-4-5' => birth_employment_partner_more
+* due_date >= '2015-4-5'
+  * NOT continuity(job_before_x_1 job_after_y_1) OR NOT lower_earnings(lel_1) => outcome_birth_spl_mother_partner_leave_allowance
+  * otherwise => outcome_birth_spl_mother_partner_basic
+* due_date < '2015-4-5'
+  * NOT continuity(job_before_x_1 job_after_y_1) OR NOT lower_earnings(lel_1) => outcome_birth_mother_partner_basic_leave_allowance
+  * otherwise => outcome_birth_mother_partner_basic

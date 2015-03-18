@@ -1,4 +1,4 @@
-$IF job_after_y_1 is 'yes'
+$IF employment_status_1 is 'employee' AND job_after_y_1 is 'yes'
 
 {{snippet: mat-leave}}
 
@@ -9,7 +9,6 @@ $IF earnings_employment(earnings_employment_1 work_employment_1)
 {{snippet: mat-allowance}}
 
 $ENDIF
-
 
 $IF NOT job_after_y_1 is 'yes' AND NOT earnings_employment(earnings_employment_1 work_employment_1)
 

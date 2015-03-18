@@ -1,0 +1,15 @@
+$IF employment_status_2 is 'self-employed' AND employment_status_1 is 'unemployed'
+
+{{snippet: mat-allowance-14-weeks}}
+
+$ELSEIF earnings_employment(earnings_employment_1 work_employment_1)
+
+{{snippet: mat-allowance}}
+
+$ELSE
+
+{{snippet: single-birth-nothing}}
+
+$ENDIF
+
+{{snippet: extra-help}}

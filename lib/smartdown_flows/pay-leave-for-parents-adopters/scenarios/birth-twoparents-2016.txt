@@ -1,18 +1,17 @@
 #Mother self-employed, does not pass earnings and employment test
 #Partner self-employed
 - two_carers: yes
-  adopting: no
 - due_date: 2016-1-1
 - employment_status_1: self-employed
   employment_status_2: self-employed
 - work_employment_1: no
   earnings_employment_1: no
-outcome_birth-nothing
+outcome_birth_mother_allowance
+has markers: single-birth-nothing, extra-help
 
 #Mother employee, does not pass continuity test, passes lower earnings test
 #Partner self-employed
 - two_carers: yes
-  adopting: no
 - due_date: 2016-1-1
 - employment_status_1: employee
   employment_status_2: self-employed
@@ -23,12 +22,12 @@ outcome_birth-nothing
 - work_employment_1: yes
   earnings_employment_1: yes
 - salary_1_66_weeks: 400-week
-outcome_mat-allowance
+outcome_birth_mother_allowance
+has markers: mat-allowance, extra-help
 
 #Mother worker, passes continuity test, does not pass lower earnings test, does not pass earnings and employment test
 #Partner worker, does not pass continuity test
 - two_carers: yes
-  adopting: no
 - due_date: 2016-1-1
 - employment_status_1: worker
   employment_status_2: worker
@@ -42,36 +41,36 @@ outcome_mat-allowance
   job_after_y_2: no
   salary_2: 400-week
   lel_2: no
-outcome_birth-nothing
+outcome_birth_spl_mother_partner_leave_allowance
+has markers: extra-help
 
 #Mother self-employed, passes earnings and employment test
 #Partner self-employed
 - two_carers: yes
-  adopting: no
 - due_date: 2016-1-1
 - employment_status_1: self-employed
   employment_status_2: self-employed
 - work_employment_1: yes
   earnings_employment_1: yes
 - salary_1_66_weeks: 400-week
-outcome_mat-allowance
+outcome_birth_mother_allowance
+has markers: mat-allowance, extra-help
 
 #Mother unemployed, passes earnings and employment test
 #Partner unemployed
 - two_carers: yes
-  adopting: no
 - due_date: 2016-1-1
 - employment_status_1: unemployed
   employment_status_2: unemployed
 - work_employment_1: yes
   earnings_employment_1: yes
 - salary_1_66_weeks: 400-week
-outcome_mat-allowance
+outcome_birth_mother_allowance
+has markers: mat-allowance, extra-help
 
 #Mother employee, does not pass continuity test, passes earnings and employment test
 #Partner self-employed
 - two_carers: yes
-  adopting: no
 - due_date: 2016-1-1
 - employment_status_1: employee
   employment_status_2: self-employed
@@ -82,12 +81,12 @@ outcome_mat-allowance
 - work_employment_1: yes
   earnings_employment_1: yes
 - salary_1_66_weeks: 400-week
-outcome_mat-allowance
+outcome_birth_mother_allowance
+has markers mat-allowance, extra-help
 
 #Mother employee, does not pass continuity test, passes lower earnings test
 #Partner worker, does not pass continuity test
 - two_carers: yes
-  adopting: no
 - due_date: 2016-1-1
 - employment_status_1: employee
   employment_status_2: worker
@@ -102,23 +101,23 @@ outcome_mat-allowance
   job_after_y_2: no
   salary_2: 400-week
   lel_2: no
-outcome_mat-allowance
+outcome_birth_spl_mother_partner_leave_allowance
+has markers: mat-allowance, extra-help
 
 #Mother unemployed, passes earnings and employment test
 #Partner self-employed
 - two_carers: yes
-  adopting: no
 - due_date: 2016-1-1
 - employment_status_1: unemployed
   employment_status_2: self-employed
 - work_employment_1: no
   earnings_employment_1: no
-outcome_mat-allowance-14-weeks
+outcome_birth_mother_14_week_allowance
+has markers: mat-allowance-14-weeks, extra-help
 
 #Mother employee, passes continuity test, does not pass lower earnings test, passes earnings and employment test
 #Partner self-employed, passes earnings and employment test
 - two_carers: yes
-  adopting: no
 - due_date: 2016-1-1
 - employment_status_1: employee
   employment_status_2: self-employed
@@ -131,12 +130,12 @@ outcome_mat-allowance-14-weeks
 - salary_1_66_weeks: 400-week
 - work_employment_2: yes
   earnings_employment_2: yes
-outcome_mat-allowance_mat-leave_mat-shared-leave
+outcome_birth_spl_mother_basic
+has markers: mat-allowance, mat-leave, mat-shared-leave, extra-help
 
 #Mother employee, passes continuity test, does not pass lower earnings test, passes earnings and employment test
 #Partner self-employed, does not pass earnings and employment test
 - two_carers: yes
-  adopting: no
 - due_date: 2016-1-1
 - employment_status_1: employee
   employment_status_2: self-employed
@@ -149,12 +148,12 @@ outcome_mat-allowance_mat-leave_mat-shared-leave
 - salary_1_66_weeks: 400-week
 - work_employment_2: no
   earnings_employment_2: no
-outcome_mat-allowance_mat-leave
+outcome_birth_spl_mother_basic
+has markers: mat-allowance, mat-leave, extra-help
 
 #Mother employee, passes continuity test, does not pass lower earnings test, does not pass earnings and employment test
 #Partner self-employed, passes earnings and employment test
 - two_carers: yes
-  adopting: no
 - due_date: 2016-1-1
 - employment_status_1: employee
   employment_status_2: self-employed
@@ -166,12 +165,12 @@ outcome_mat-allowance_mat-leave
   earnings_employment_1: no
 - work_employment_2: yes
   earnings_employment_2: yes
-outcome_mat-leave_mat-shared-leave
+outcome_birth_spl_mother_basic
+has markers: mat-leave, mat-shared-leave, extra-help
 
 #Mother employee, passes continuity test, does not pass lower earnings test, does not pass earnings and employment test
 #Partner self-employed, does not pass earnings and employment test
 - two_carers: yes
-  adopting: no
 - due_date: 2016-1-1
 - employment_status_1: employee
   employment_status_2: self-employed
@@ -183,12 +182,12 @@ outcome_mat-leave_mat-shared-leave
   earnings_employment_1: no
 - work_employment_2: no
   earnings_employment_2: no
-outcome_mat-leave
+outcome_birth_spl_mother_basic
+has markers: mat-leave, extra-help
 
 #Mother employee, does not pass continuity test, will still be employed, passes earnings and employment test
 #Partner worker, does not pass continuity test
 - two_carers: yes
-  adopting: no
 - due_date: 2016-1-1
 - employment_status_1: employee
   employment_status_2: worker
@@ -203,12 +202,12 @@ outcome_mat-leave
   job_after_y_2: no
   salary_2: 400-week
   lel_2: no
-outcome_mat-allowance_mat-leave
+outcome_birth_spl_mother_partner_leave_allowance
+has markers: mat-allowance, mat-leave, extra-help
 
 #Mother employee, passes continuity test, does not pass lower earnings test, passes earnings and employment test
 #Partner employee, passes continuity test, passes lower earnings test
 - two_carers: yes
-  adopting: no
 - due_date: 2016-1-1
 - employment_status_1: employee
   employment_status_2: employee
@@ -223,12 +222,12 @@ outcome_mat-allowance_mat-leave
   job_after_y_2: yes
   salary_2: 400-week
   lel_2: yes
-outcome_mat-allowance_mat-leave_pat-leave_pat-pay_both-shared-leave_pat-shared-pay
+outcome_birth_spl_mother_partner_leave_allowance
+has markers: mat-allowance, mat-leave, pat-leave, pat-pay, both-shared-leave, pat-shared-pay, extra-help
 
 #Mother employee, passes continuity test, does not pass lower earnings test, passes earnings and employment test
 #Partner worker, passes continuity test, passes lower earnings test
 - two_carers: yes
-  adopting: no
 - due_date: 2016-1-1
 - employment_status_1: employee
   employment_status_2: worker
@@ -243,12 +242,12 @@ outcome_mat-allowance_mat-leave_pat-leave_pat-pay_both-shared-leave_pat-shared-p
   job_after_y_2: yes
   salary_2: 400-week
   lel_2: yes
-outcome_mat-allowance_mat-leave_pat-pay_mat-shared-leave_pat-shared-pay
+outcome_birth_spl_mother_partner_leave_allowance
+has markers: mat-allowance, mat-leave, pat-pay, mat-shared-leave, pat-shared-pay, extra-help
 
 #Mother self-employed, passes earnings and employment test
 #Partner employee, passes continuity test, passes lower earnings test
 - two_carers: yes
-  adopting: no
 - due_date: 2016-1-1
 - employment_status_1: self-employed
   employment_status_2: employee
@@ -259,12 +258,12 @@ outcome_mat-allowance_mat-leave_pat-pay_mat-shared-leave_pat-shared-pay
   job_after_y_2: yes
   salary_2: 400-week
   lel_2: yes
-outcome_mat-allowance_pat-leave_pat-pay_pat-shared-leave_pat-shared-pay
+outcome_birth_spl_mother_partner_allowance
+has markers: mat-allowance, pat-leave, pat-pay, pat-shared-leave, pat-shared-pay, extra-help
 
 #Mother self-employed, passes earnings and employment test
 #Partner worker, passes continuity test, passes lower earnings test
 - two_carers: yes
-  adopting: no
 - due_date: 2016-1-1
 - employment_status_1: self-employed
   employment_status_2: worker
@@ -275,12 +274,12 @@ outcome_mat-allowance_pat-leave_pat-pay_pat-shared-leave_pat-shared-pay
   job_after_y_2: yes
   salary_2: 400-week
   lel_2: yes
-outcome_mat-allowance_pat-pay_pat-shared-pay
+outcome_birth_spl_mother_partner_allowance
+has markers: mat-allowance, pat-pay, pat-shared-pay, extra-help
 
 #Mother worker, does not pass continuity test, passes earnings and employment test
 #Partner worker, passes continuity test, passes lower earnings test
 - two_carers: yes
-  adopting: no
 - due_date: 2016-1-1
 - employment_status_1: worker
   employment_status_2: worker
@@ -295,12 +294,12 @@ outcome_mat-allowance_pat-pay_pat-shared-pay
   job_after_y_2: yes
   salary_2: 400-week
   lel_2: yes
-outcome_mat-allowance_pat-pay_pat-shared-pay
+outcome_birth_spl_mother_partner_leave_allowance
+has markers: mat-allowance, pat-pay, pat-shared-pay, extra-help
 
 #Mother employee, does not pass continuity test, passes lower earnings test
 #Partner employee, passes continuity test, does not pass lower earnings test
 - two_carers: yes
-  adopting: no
 - due_date: 2016-1-1
 - employment_status_1: employee
   employment_status_2: employee
@@ -315,12 +314,12 @@ outcome_mat-allowance_pat-pay_pat-shared-pay
   job_after_y_2: yes
   salary_2: 400-week
   lel_2: no
-outcome_mat-allowance_mat-leave_pat-leave_pat-shared-leave
+outcome_birth_spl_mother_partner_leave_allowance
+has markers: mat-allowance, mat-leave, pat-leave, pat-shared-leave, extra-help
 
 #Mother employee, passes continuity test, passes lower earnings test
 #Partner self-employed, does not pass earnings and employment test
 - two_carers: yes
-  adopting: no
 - due_date: 2016-1-1
 - employment_status_1: employee
   employment_status_2: self-employed
@@ -330,12 +329,12 @@ outcome_mat-allowance_mat-leave_pat-leave_pat-shared-leave
   lel_1: yes
 - work_employment_2: no
   earnings_employment_2: no
-outcome_mat-leave_mat-pay
+outcome_birth_spl_mother_basic
+has markers: mat-leave, mat-pay, extra-help
 
 #Mother employee, passes continuity test, passes lower earnings test
 #Partner self-employed, passes earnings and employment test
 - two_carers: yes
-  adopting: no
 - due_date: 2016-1-1
 - employment_status_1: employee
   employment_status_2: self-employed
@@ -345,12 +344,12 @@ outcome_mat-leave_mat-pay
   lel_1: yes
 - work_employment_2: yes
   earnings_employment_2: yes
-outcome_mat-leave_mat-pay_mat-shared-leave_mat-shared-pay
+outcome_birth_spl_mother_basic
+has markers: mat-leave, mat-pay, mat-shared-leave, mat-shared-pay, extra-help
 
 #Mother employee, passes continuity test, passes lower earnings test
 #Partner employee, does not pass continuity test, passes lower earnings test, passes earnings and employment test
 - two_carers: yes
-  adopting: no
 - due_date: 2016-1-1
 - employment_status_1: employee
   employment_status_2: employee
@@ -364,12 +363,12 @@ outcome_mat-leave_mat-pay_mat-shared-leave_mat-shared-pay
   lel_2: yes
 - work_employment_2: yes
   earnings_employment_2: yes
-outcome_mat-leave_mat-pay_mat-shared-leave_mat-shared-pay
+outcome_birth_spl_mother_partner_basic
+has markers: mat-leave, mat-pay, mat-shared-leave, mat-shared-pay, extra-help
 
 #Mother employee, passes continuity test, passes lower earnings test
 #Parnter employee, passes continuity test, passes lower earnings test
 - two_carers: yes
-  adopting: no
 - due_date: 2016-1-1
 - employment_status_1: employee
   employment_status_2: employee
@@ -381,12 +380,14 @@ outcome_mat-leave_mat-pay_mat-shared-leave_mat-shared-pay
   job_after_y_2: yes
   salary_2: 400-week
   lel_2: yes
-outcome_mat-leave_mat-pay_pat-leave_pat-pay_both-shared-leave_both-shared-pay
+- work_employment_2: yes
+  earnings_employment_2: yes
+outcome_birth_spl_mother_partner_basic
+has markers: mat-leave, mat-pay, pat-leave, pat-pay, both-shared-leave, both-shared-pay, extra-help
 
 #Mother employee, passes continuity test, passes lower earnings test
 #Partner worker, passes continuity test, passes lower earnings test
 - two_carers: yes
-  adopting: no
 - due_date: 2016-1-1
 - employment_status_1: employee
   employment_status_2: worker
@@ -398,12 +399,12 @@ outcome_mat-leave_mat-pay_pat-leave_pat-pay_both-shared-leave_both-shared-pay
   job_after_y_2: yes
   salary_2: 400-week
   lel_2: yes
-outcome_mat-leave_mat-pay_pat-pay_mat-shared-leave_both-shared-pay
+outcome_birth_spl_mother_partner_basic
+has markers: mat-leave, mat-pay, pat-pay, mat-shared-leave, both-shared-pay, extra-help
 
 #Mother employee, passes continuity test, does not pass lower earnings test, does not pass earnings and employment test
 #Partner employee, passes continuity test, passes lower earnings test
 - two_carers: yes
-  adopting: no
 - due_date: 2016-1-1
 - employment_status_1: employee
   employment_status_2: employee
@@ -417,12 +418,12 @@ outcome_mat-leave_mat-pay_pat-pay_mat-shared-leave_both-shared-pay
   job_after_y_2: yes
   salary_2: 400-week
   lel_2: yes
-outcome_mat-leave_pat-leave_pat-pay_mat-shared-leave
+outcome_birth_spl_mother_partner_leave_allowance
+has markers: mat-leave, pat-leave, pat-pay, mat-shared-leave, extra-help
 
 #Mother employee, passes continuity test, does not pass lower earnings test, does not pass earnings and employment test
 #Partner worker, passes continuity test, passes lower earnings test
 - two_carers: yes
-  adopting: no
 - due_date: 2016-1-1
 - employment_status_1: employee
   employment_status_2: worker
@@ -436,12 +437,12 @@ outcome_mat-leave_pat-leave_pat-pay_mat-shared-leave
   job_after_y_2: yes
   salary_2: 400-week
   lel_2: yes
-outcome_mat-leave_pat-pay_mat-shared-leave
+outcome_birth_spl_mother_partner_leave_allowance
+has markers: mat-leave, pat-pay, mat-shared-leave, extra-help
 
 #Mother worker, passes continuity test, passes lower earnings test
 #Partner self-employed, does not pass earnings and employment test
 - two_carers: yes
-  adopting: no
 - due_date: 2016-1-1
 - employment_status_1: worker
   employment_status_2: self-employed
@@ -451,12 +452,12 @@ outcome_mat-leave_pat-pay_mat-shared-leave
   lel_1: yes
 - work_employment_2: no
   earnings_employment_2: no
-outcome_mat-pay
+outcome_birth_spl_mother_basic
+has markers: mat-pay, extra-help
 
 #Mother worker, passes continuity test, passes lower earnings test
 #Partner self-employed, passes earnings and employment test
 - two_carers: yes
-  adopting: no
 - due_date: 2016-1-1
 - employment_status_1: worker
   employment_status_2: self-employed
@@ -466,12 +467,12 @@ outcome_mat-pay
   lel_1: yes
 - work_employment_2: yes
   earnings_employment_2: yes
-outcome_mat-pay_mat-shared-pay
+outcome_birth_spl_mother_basic
+has markers: mat-pay, mat-shared-pay, extra-help
 
 #Mother worker, passes continuity test, passes lower earnings test
 #Partner employee, does not pass continuity test, does not pass lower earnings test, passes earnings and employment test
 - two_carers: yes
-  adopting: no
 - due_date: 2016-1-1
 - employment_status_1: worker
   employment_status_2: employee
@@ -485,12 +486,12 @@ outcome_mat-pay_mat-shared-pay
   lel_2: no
 - work_employment_2: yes
   earnings_employment_2: yes
-outcome_mat-pay_mat-shared-pay
+outcome_birth_spl_mother_partner_basic
+has markers: mat-pay, mat-shared-pay, extra-help
 
 #Mother worker, passes continuity test, passes lower earnings test
 #Partner employee, passes continuity test, passes lower earnings test
 - two_carers: yes
-  adopting: no
 - due_date: 2016-1-1
 - employment_status_1: worker
   employment_status_2: employee
@@ -502,12 +503,14 @@ outcome_mat-pay_mat-shared-pay
   job_after_y_2: yes
   salary_2: 400-week
   lel_2: yes
-outcome_mat-pay_pat-leave_pat-pay_pat-shared-leave_both-shared-pay
+- work_employment_2: yes
+  earnings_employment_2: yes
+outcome_birth_spl_mother_partner_basic
+has markers: mat-pay, pat-leave, pat-pay, pat-shared-leave, both-shared-pay, extra-help
 
 #Mother worker, passes continuity test, passes lower earnings test
 #Partner worker, passes continuity test, passes lower earnings test
 - two_carers: yes
-  adopting: no
 - due_date: 2016-1-1
 - employment_status_1: worker
   employment_status_2: worker
@@ -519,12 +522,12 @@ outcome_mat-pay_pat-leave_pat-pay_pat-shared-leave_both-shared-pay
   job_after_y_2: yes
   salary_2: 400-week
   lel_2: yes
-outcome_mat-pay_pat-pay_both-shared-pay
+outcome_birth_spl_mother_partner_basic
+has markers: mat-pay, pat-pay, both-shared-pay, extra-help
 
 #Mother self-employed, does not pass earnings and employment test
 #Partner employee, passes continuity test, passes lower earnings test
 - two_carers: yes
-  adopting: no
 - due_date: 2016-1-1
 - employment_status_1: self-employed
   employment_status_2: employee
@@ -534,12 +537,12 @@ outcome_mat-pay_pat-pay_both-shared-pay
   job_after_y_2: yes
   salary_2: 400-week
   lel_2: yes
-outcome_pat-leave_pat-pay
+outcome_birth_spl_mother_partner_allowance
+has markers: pat-leave, pat-pay, extra-help
 
 #Mother self-employed, does not pass earnings and employment test
 #Partner worker, passes continuity test, passes lower earnings test
 - two_carers: yes
-  adopting: no
 - due_date: 2016-1-1
 - employment_status_1: self-employed
   employment_status_2: worker
@@ -549,12 +552,12 @@ outcome_pat-leave_pat-pay
   job_after_y_2: yes
   salary_2: 400-week
   lel_2: yes
-outcome_pat-pay
+outcome_birth_spl_mother_partner_allowance
+has markers: pat-pay, extra-help
 
 #Mother employee, passes continuity test, passes lower earnings test
 #Partner employee, passes continuity test, does not pass lower earnings test, does not pass earnings and employment test
 - two_carers: yes
-  adopting: no
 - due_date: 2016-1-1
 - employment_status_1: employee
   employment_status_2: employee
@@ -568,12 +571,12 @@ outcome_pat-pay
   lel_2: no
 - work_employment_2: no
   earnings_employment_2: no
-outcome_mat-leave_mat-pay_pat-leave_pat-shared-leave
+outcome_birth_spl_mother_partner_basic
+has markers: mat-leave, mat-pay, pat-leave, pat-shared-leave, extra-help
 
 #Mother employee, passes continuity test, does not pass lower earnings test, does not pass earnings and employment test
 #Partner worker, passes continuity test, does not pass lower earnings test, passes earnings and employment test
 - two_carers: yes
-  adopting: no
 - due_date: 2016-1-1
 - employment_status_1: employee
   employment_status_2: worker
@@ -587,14 +590,12 @@ outcome_mat-leave_mat-pay_pat-leave_pat-shared-leave
   job_after_y_2: yes
   salary_2: 400-week
   lel_2: no
-- work_employment_2: yes
-  earnings_employment_2: yes
-outcome_mat-leave_mat-shared-leave
+outcome_birth_spl_mother_partner_leave_allowance
+has markers: mat-leave, mat-shared-leave, extra-help
 
 #Mother employee, passes continuity test, does not pass lower earnings test, does not pass earnings and employment test
 #Partner worker, does not pass continuity test, does not pass lower earnings test, passes earnings and employment test
 - two_carers: yes
-  adopting: no
 - due_date: 2016-1-1
 - employment_status_1: employee
   employment_status_2: worker
@@ -610,12 +611,12 @@ outcome_mat-leave_mat-shared-leave
   lel_2: no
 - work_employment_2: yes
   earnings_employment_2: yes
-outcome_mat-leave_mat-shared-leave
+outcome_birth_spl_mother_partner_leave_allowance
+has markers: mat-leave, mat-shared-leave, extra-help
 
 #Mother worker, does not pass continuity test, does not pass lower earnings test, does not pass earnings and employment test
 #Partner worker, passes continuity test, does not pass lower earnings test
 - two_carers: yes
-  adopting: no
 - due_date: 2016-1-1
 - employment_status_1: worker
   employment_status_2: worker
@@ -629,4 +630,5 @@ outcome_mat-leave_mat-shared-leave
   job_after_y_2: yes
   salary_2: 400-week
   lel_2: no
-outcome_birth-nothing
+outcome_birth_spl_mother_partner_leave_allowance
+has markers: birth-nothing, extra-help
