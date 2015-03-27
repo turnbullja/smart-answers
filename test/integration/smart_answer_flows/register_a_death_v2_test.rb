@@ -406,7 +406,7 @@ class RegisterADeathV2Test < ActiveSupport::TestCase
         add_response "pakistan"
         add_response "in_the_uk"
         assert_current_node :oru_result
-        assert_phrase_list :waiting_time, [:registration_takes_3_days]
+        assert_phrase_list :waiting_time, [:registration_can_take_3_months]
       end
     end # Pakistan and in UK
     context "answer death in dominica, user in st kitts" do

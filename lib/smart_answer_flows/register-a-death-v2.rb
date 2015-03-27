@@ -135,7 +135,7 @@ outcome :oru_result do
 
   precalculate :waiting_time do
     phrases = PhraseList.new
-    if reg_data_query.class::ORU_TRANSITIONED_COUNTRIES.exclude?(country_of_death) && in_the_uk
+    if in_the_uk && reg_data_query.class::ORU_FAST_DOCUMENT_RETURN_COUNTRIES.exclude?(country_of_death)
       phrases << :registration_can_take_3_months
     else
       phrases << :registration_takes_3_days
