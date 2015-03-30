@@ -691,7 +691,7 @@ class CalculateStatePensionTest < ActiveSupport::TestCase
       context "50 years old" do
         setup do
           Timecop.travel('2012-10-08')
-   add_response Date.civil(50.years.ago.year, 4, 7)
+          add_response Date.civil(50.years.ago.year, 4, 7)
         end
 
         should "ask for number of years paid NI" do
@@ -1181,7 +1181,7 @@ class CalculateStatePensionTest < ActiveSupport::TestCase
 
         assert_state_variable "formatted_state_pension_date", " 6 September 2013"
         assert_current_node :amount_result
-        assert_phrase_list :result_text, [:within_4_months_enough_qy_years]
+        assert_phrase_list :result_text, [:within_4_months_enough_qy_years, :within_4_months_enough_qy_years_more]
       end
 
       should "should show the correct result with pay_reduced_ni_rate" do
@@ -1344,7 +1344,7 @@ class CalculateStatePensionTest < ActiveSupport::TestCase
         add_response 0 # years of NI
         add_response 0 # Years of unemployment
         add_response :no # claimed benefit
-        add_response 0 # years worked between 16 and 19 
+        add_response 0 # years worked between 16 and 19
         add_response :yes # lived or worked abroad
       end
       should "go to outcome and show correct phrases" do
